@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import 'animate.css';
 import { VitePWA } from 'vite-plugin-pwa';
+import { manifest, seoConfig } from "./seoConfig.ts";
 
 // https://astro.build/config
 export default defineConfig({
