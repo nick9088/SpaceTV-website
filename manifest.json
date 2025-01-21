@@ -1,7 +1,7 @@
 {
-  "name": "My App",
-  "description": "My App description",
-  "short_name": "My App",
+  "name": "SpaceTV",
+  "description": "your daily soundtrack, 24/7",
+  "short_name": "SpaceTV",
   "icons": [
     {
       "src": "/favicon-72x72.png",
@@ -54,7 +54,7 @@
   ],
   "scope": "/",
   "start_url": "/?source=pwa",
-  "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "display": "fullscreen",
+  "theme_color": "#222222",
+  "background_color": "#222222"
 }
