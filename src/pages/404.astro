@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 - SpaceTV">
+    <h1 class="text-3xl font-bold animate__animated animate__fadeIn py-3">404</h1>
+    <p class="font-bold text-3xl py-2 animate__animated animate__fadeIn">The page you were looking for is not available or is currently in a galaxy far away...</p>
+    <a href="/" class="text-2xl animate__animated animate__fadeIn animate__delay-3s relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-left after:h-[2px] after:bg-mauve">Go back home</a>
+</Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+	body {
+		@apply flex h-screen;
+		padding: 0 1.5rem 1.5rem 1.5rem;
+		font-family: "Inter", sans-serif;
+	}
+
+	.underline-2 {
+		border-bottom: 1px solid;
+	}
+</style>

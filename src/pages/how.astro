@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="how - SpaceTV">
+	<main class="animate__animated animate__fadeIn">
+		<h1 class="font-bold text-3xl py-3">how</h1>
+		<p>SpaceTV was born... out of nowhere</p>
+        <p>HOW:</p>
+        <p>the radio service is hosted through an AzuraCast docker container</p>
+        <p>the website has been made in Astro combined with TailwindCSS and the "Inter" font</p>
+        <p>the PWA is basically the same as the website</p>
+	</main>
+</Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+	body {
+		@apply flex h-screen;
+		padding: 0 1.5rem 1.5rem 1.5rem;
+		font-family: "Inter", sans-serif;
+	}
+
+	.underline-2 {
+		border-bottom: 1px solid;
+	}
+
+	.favlist {
+		list-style: inside;
+	}
+</style>

@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Player from "../components/Player.astro";
+---
+
+<Layout title="listen - SpaceTV">
+	<main class="animate__animated animate__fadeIn">
+		<h1 class="font-bold text-3xl py-3">listen to SpaceTV</h1>
+        <Player />
+        <p class="font-bold">for mobile users: you can leave your browser open in the background to keep listening, may not work for iOS users</p>
+	</main>
+</Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+	body {
+		@apply flex h-screen;
+		padding: 0 1.5rem 1.5rem 1.5rem;
+		font-family: "Inter", sans-serif;
+	}
+
+	.underline-2 {
+		border-bottom: 1px solid;
+	}
+
+	.favlist {
+		list-style: inside;
+	}
+    .player {
+        background-color: #222222;
+    }
+</style>
