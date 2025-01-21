@@ -1,27 +1,26 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import 'animate.css';
-import { VitePWA } from 'vite-plugin-pwa';
-import { manifest, seoConfig } from "./seoConfig.ts";
-
 import webmanifest from "astro-webmanifest";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), webmanifest()],
-  vite: {
-    plugins: [VitePWA({
-      registerType: "autoUpdate",
-      manifest: "./manifest.json",
-      workbox: {
-        globDirectory: "dist",
-        // globPatterns for the files you want to cache inmediately
-        // after service worker registration.
-        globPatterns: ["**/*.{js,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico}"],
-        // Don't fallback on document based (e.g. `/some-page`) requests
-        // This removes an errant console.log message from showing up.
-        navigateFallback: null
-      }
-    })]
-  }
+  integrations: [tailwind(), webmanifest({
+    /**
+     * required
+     **/
+    name: 'SpaceTV',
+
+    /**
+     * optional
+     **/
+    icon: 'src/images/icon.svg', // source for favicon & icons
+
+    short_name: 'SpaceTV',
+    description: 'your daily soundtrack, 24/7',
+    start_url: '/',
+    theme_color: '#222222',
+    background_color: '#222222',
+    display: 'fullscreen',
+  })]
 });

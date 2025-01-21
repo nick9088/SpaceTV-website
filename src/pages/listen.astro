@@ -7,7 +7,13 @@ import Player from "../components/Player.astro";
 	<main class="animate__animated animate__fadeIn">
 		<h1 class="font-bold text-3xl py-3">listen to SpaceTV</h1>
         <Player />
-        <p class="font-bold">for mobile users: you can leave your browser open in the background to keep listening, may not work for iOS users</p>
+        <p class="font-bold">for mobile users: you can now install the website's PWA</p>
+		<p class="font-bold py-2">streams:</p>
+		<ul class="favlist">
+			<li><a class="font-bold py-2" href="https://stvpanel.nick909.dev/listen/release/radio.mp3">MP3 320Kbps Stream</a></li>
+			<li><a class="font-bold py-2" href="https://stvpanel.nick909.dev/public/release/playlist.m3u">M3U Playlist</a></li>
+			<li><a class="font-bold py-2" href="https://stvpanel.nick909.dev/public/release/playlist.pls">PLS Playlist</a></li>
+		</ul>
 	</main>
 </Layout>
 
