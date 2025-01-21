@@ -10,6 +10,7 @@ export default defineConfig({
   vite: {
     plugins: [VitePWA({
         registerType: "autoUpdate",
+        manifest,
         workbox: {
     globDirectory: "dist",
     // globPatterns for the files you want to cache inmediately
